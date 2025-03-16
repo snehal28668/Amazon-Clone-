@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #232f3e;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .cart-table th, .cart-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-table th {
+            background-color: #232f3e;
+            color: #fff;
+        }
+        .cart-table img {
+            max-width: 100px;
+            height: auto;
+        }
+        .cart-table button {
+            background-color: #f0c14b;
+            border: 1px solid #a88734;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .cart-table button:hover {
+            background-color: #ddb347;
+        }
+        .total-section {
+            margin-top: 20px;
+            text-align: right;
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .total-section h3 {
+            margin: 0;
+        }
+        .total-section span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <div class="container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://via.placeholder.com/100" alt="Product 1"></td>
+                    <td>Product 1 Description</td>
+                    <td><input type="number" value="1" min="1" style="width: 50px;"></td>
+                    <td>$10.00</td>
+                    <td>$10.00</td>
+                    <td><button>Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/100" alt="Product 2"></td>
+                    <td>Product 2 Description</td>
+                    <td><input type="number" value="2" min="1" style="width: 50px;"></td>
+                    <td>$15.00</td>
+                    <td>$30.00</td>
+                    <td><button>Remove</button></td>
+                </tr>
+                <!-- Add more items here -->
+            </tbody>
+        </table>
+        <div class="total-section">
+            <h3>Total: <span>$40.00</span></h3>
+        </div>
+    </div>
+</body>
+</html>
